@@ -1151,31 +1151,32 @@
         <br>
         <div id="" class=" contact-form-page ">
             <div data-aos="fade-right" class="form" style="display: flex;flex-direction: column;align-items: center; ">
-                <div class="form-buttons ">
-                    <ul class="nav nav-pills btn-group-justified m-auto " id="pills-tab" role="tablist">
-                        <li class="nav-item bg-grey m-auto" role="presentation">
-                            <a class="nav-link active contact-buttons" id="pills-speaker-tab" data-toggle="pill"
-                                href="#pills-speaker" role="tab" aria-controls="pills-speaker"
-                                aria-selected="true">SPEAKER</a>
-                        </li>
-                        <li class="nav-item bg-grey m-auto" role="presentation">
-                            <a class="nav-link contact-buttons" id="pills-sponsor-tab" data-toggle="pill"
-                                href="#pills-sponsor" role="tab" aria-controls="pills-sponsor"
-                                aria-selected="false">SPONSOR</a>
-                        </li>
-                        <li class="nav-item bg-grey m-auto" role="presentation">
-                            <a class="nav-link contact-buttons" id="pills-attendee-tab" data-toggle="pill"
-                                href="#pills-attendee" role="tab" aria-controls="pills-attendee"
-                                aria-selected="false">ATTENDEE</a>
-                        </li>
-                    </ul>
-                </div>
-
                 <div class="tab-content form-container" id="pills-tabContent">
                     <div style="background-color: transparent !important;"
                         class="tab-pane fade form-tab-pane show active" id="pills-speaker" role="tabpanel"
                         aria-labelledby="pills-speaker-tab">
                         <form action="" class="needs-validation p-3 pt-3" method="POST">
+                            <div class="d-flex justify-content-around align-items-center flex-wrap m-auto">
+                                <div class="m-2">
+                                    <input type="radio" name="location" id="location1" value="Chennai" required>
+                                    <label class="form-check-label" for="location1">
+                                        SPEAKER
+                                    </label>
+                                </div>
+                                <div class="m-2">
+                                    <input type="radio" name="location" id="location2" value="Pune" required>
+                                    <label class="form-check-label" for="location2">
+                                        SPONSOR
+                                    </label>
+                                </div>
+                                <div class="m-2">
+                                    <input type="radio" name="location" id="location3" value="Hyderabad" required>
+                                    <label class="form-check-label" for="location3">
+                                        ATTENDEE
+                                    </label>
+                                </div>
+                                
+                            </div>
                             <br>
                             <div class="form-row">
                                 <div class="mb-3 form-row-input col-md-6">
@@ -1212,85 +1213,7 @@
                             <button class="submit-btn btn-primary" type="submit">Submit</button>
                         </form>
                     </div>
-                    <div style="background-color: transparent !important;" class="tab-pane fade form-tab-pane"
-                        id="pills-sponsor" role="tabpanel" aria-labelledby="pills-sponsor-tab">
-                        <form action="https://api.staticforms.xyz/submit" class="needs-validation p-3 pt-3" method="POST">
-                            <br>
-                            <div class="form-row">
-                                <input type="hidden" name="accessKey" value="fd8cf8d0-37ca-4c1b-82a6-85ad71ffdc1d">
-                                <div class="mb-3 form-row-input col-md-6">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" class="form-control input bg-transparent" id="name"
-                                        required>
-                                </div>
-                                <div class=" mb-3 form-row-input col-md-6">
-                                    <label for="Phone">Phone Number</label>
-                                    <input type="tel" class="form-control input bg-transparent" id="Phone" required
-                                        name="phone">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="mb-3 form-row-input col-md-6">
-                                    <label for="email">Email</label>
-                                    <input type="text" class="form-control input bg-transparent" id="email" required
-                                        name="email">
-                                </div>
-                                <div class="mb-3 form-row-input col-md-6">
-                                    <label for="Job">Job Title</label>
-                                    <input type="text" class="form-control input bg-transparent" id="Job" required
-                                        name="job">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="mb-3 form-row-input col-md-12">
-                                    <label for="Company">Company Name</label>
-                                    <input type="text" class="form-control input bg-transparent" id="Company" required
-                                        name="company">
-                                </div>
-                            </div>
-
-                            <button class="submit-btn btn-primary" type="submit">Submit</button>
-                        </form>
-                    </div>
-                    <div style="background-color: transparent !important;" class="tab-pane fade form-tab-pane"
-                        id="pills-attendee" role="tabpanel" aria-labelledby="pills-attendee-tab">
-                        <form action="attendee.php" class="needs-validation p-3 pt-3" method="POST">
-                            <br>
-                            <div class="form-row">
-                                <div class="mb-3 form-row-input col-md-6">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" class="form-control input bg-transparent" id="name"
-                                        required>
-                                </div>
-                                <div class=" mb-3 form-row-input col-md-6">
-                                    <label for="Phone">Phone Number</label>
-                                    <input type="tel" class="form-control input bg-transparent" id="Phone" required
-                                        name="phone">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="mb-3 form-row-input col-md-6">
-                                    <label for="email">Email</label>
-                                    <input type="text" class="form-control input bg-transparent" id="email" required
-                                        name="email">
-                                </div>
-                                <div class="mb-3 form-row-input col-md-6">
-                                    <label for="Job">Job Title</label>
-                                    <input type="text" class="form-control input bg-transparent" id="Job" required
-                                        name="job">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="mb-3 form-row-input col-md-12">
-                                    <label for="Company">Company Name</label>
-                                    <input type="text" class="form-control input bg-transparent" id="Company" required
-                                        name="company">
-                                </div>
-                            </div>
-
-                            <button class="submit-btn btn-primary" type="submit">Submit</button>
-                        </form>
-                    </div>
+                    
                 </div>
             </div>
 
