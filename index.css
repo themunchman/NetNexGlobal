@@ -603,6 +603,9 @@ header {
     color: #4C84C2;
 }
 
+.clients-section .container .row div{
+    padding: 20px 0px;
+}
 .clients-section img {
     margin: auto;
 }
