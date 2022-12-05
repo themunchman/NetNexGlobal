@@ -183,8 +183,8 @@ header {
     z-index: 1;
 }
 
-.events-hoverme:hover + .video1{
-    display: block !important;
+.events-hoverme:hover{
+    cursor: pointer;
 }
 .header-section {
     position: relative;
