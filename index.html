@@ -93,50 +93,63 @@
                     }
                 } 
             </script>
-
-   
-                <video class="video1" loop autoplay>
-                    <source src="./images/header-video1.mp4" type="video/mp4">
-                    Your browser does not support the html video tag.
-                </video>
-                <video class="video2" loop autoplay>
-                    <source src="./images/header-video2.m4v" type="video/mp4">
-                    Your browser does not support the html video tag.
-                </video>
-                <video class="video3" loop autoplay>
-                    <source src="./images/Pexels-Rodnae-Productions-7648408.m4v" type="video/mp4">
-                    Your browser does not support the html video tag.
-                </video>
-                <section class="header-section">
-                    <div class="netnex-logo">
-                        <img src="./images/netnex_logo_frontpage.svg" width="100%" alt="">
-                    </div>
-                    <!-- <div class="header-bubbles2 float-left">
+<video class="video1" loop muted autoplay>
+                <source src="./images/header-video1.mp4" type="video/mp4">
+                Your browser does not support the html video tag.
+            </video>
+            <video class="video2" loop muted autoplay>
+                <source src="./images/header-video2.m4v" type="video/mp4">
+                Your browser does not support the html video tag.
+            </video>
+            <video class="video3" loop muted autoplay>
+                <source src="./images/header-video3.mp4" type="video/mp4">
+                Your browser does not support the html video tag.
+            </video>
+            <section class="header-section">
+                <div class="netnex-logo">
+                    <img src="./images/netnex_logo_frontpage.svg" width="100%" alt="">
+                </div>
+                <!-- <div class="header-bubbles2 float-left">
                         <img src="./images/bubble-img1.svg" width="400" alt="">
                     </div> -->
-                    <br>
-                    <br>
-                    <div class="d-flex justify-content-center align-items-center flex-wrap">
-                        <p onmouseover="eventvideo()" class="events-hoverme">EVENTS</p>
-                        <p>|</p>
-                        <p onmouseover="video2()" class="digital-hoverme">DIGITAL OUTREACH</p>
-                        <p>|</p>
-                        <p onmouseover="video3()" class="marketing-hoverme">MARKETING</p>
-                    </div>
-    
-                </section>
-                <div class="ball-1"></div>
-                <div class="ball-2"></div>
-            
-        </header>
-        <!-- <script type="text/javascript">
-            function eventvideo() {
-                document.getElementsByClassName("video1").style.display = "block";
-            }
+                <br>
+                <br>
+                <div class="d-flex justify-content-center align-items-center flex-wrap">
+                    <p onmouseover="eventvideo()" onmouseout="eventvideo1()" class="events-hoverme">EVENTS</p>
+                    <p>|</p>
+                    <p onmouseover="digitalvideo()" onmouseout="digitalvideo2()" class="digital-hoverme">DIGITAL
+                        OUTREACH</p>
+                    <p>|</p>
+                    <p onmouseover="marketingvideo()" onmouseout="marketingvideo3()" class="marketing-hoverme">MARKETING
+                    </p>
+                </div>
 
-        </script>
-         -->
-        <section class="second-section">
+            </section>
+            <div class="ball-1"></div>
+            <div class="ball-2"></div>
+
+            <script type="text/javascript">
+                function eventvideo() {
+                    document.getElementsByClassName("video1")[0].style.display = "block";
+                }
+                function eventvideo1() {
+                    document.getElementsByClassName("video1")[0].style.display = "none";
+                }
+
+                function digitalvideo() {
+                    document.getElementsByClassName("video2")[0].style.display = "block";
+                }
+                function digitalvideo2() {
+                    document.getElementsByClassName("video2")[0].style.display = "none";
+                }
+
+                function marketingvideo() {
+                    document.getElementsByClassName("video3")[0].style.display = "block"
+                }
+                function marketingvideo3() {
+                    document.getElementsByClassName("video3")[0].style.display = " none"
+                }
+            </script>        <section class="second-section">
             <div id="counter">
                 <div class="item">
                     <div class="item-sub-div m-3">
